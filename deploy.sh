@@ -13,9 +13,9 @@ docker push dominic70/multi-server:$SHA
 docker push dominic70/multi-worker:$SHA
 
 #2. Apply all configs in the k8s folder
-kubectl apply -f ./k8s
+# kubectl apply -f ./k8s
 
 #3. Imperactively set latest image on each deployment
-kubectl set image deployments/client-deployment client=dominic70/multi-client:$SHA
-kubectl set image deployments/server-deployment server=dominic70/multi-server:$SHA
-kubectl set image deployments/worker-deployment worker=dominic70/multi-worker:$SHA
+# kubectl set image deployments/client-deployment client=dominic70/multi-client:$SHA
+# kubectl set image deployments/server-deployment server=dominic70/multi-server:$SHA
+# kubectl set image deployments/worker-deployment worker=dominic70/multi-worker:$SHA
